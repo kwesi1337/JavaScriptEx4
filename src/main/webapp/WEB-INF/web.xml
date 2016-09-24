@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>Quoter</servlet-name>
+        <servlet-class>opg1.Quoter</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SServlet</servlet-name>
+        <servlet-class>servlet.SServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ServletThree</servlet-name>
+        <servlet-class>servlet.ServletThree</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Quoter</servlet-name>
+        <url-pattern>/Quoter</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SServlet</servlet-name>
+        <url-pattern>/SServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ServletThree</servlet-name>
+        <url-pattern>/ServletThree</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
